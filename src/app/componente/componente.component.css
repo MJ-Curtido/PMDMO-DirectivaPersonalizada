@@ -1,5 +1,10 @@
 .aMayus {
-    border: green solid 1px;
+    border: hotpink solid 1px;
+    border-radius: 7px;
+    color: hotpink;
+    width: fit-content;
+    padding: 7px 7px 7px 7px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.17);
 }
 
 a {
