@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ComponenteComponent } from './componente/componente.component';
-import { DirectivaDirective } from './directiva.directive';
+import { DirectivaDirective } from './directivas/directiva.directive';
 
 @NgModule({
   declarations: [
