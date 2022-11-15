@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./componente.component.css']
 })
 export class ComponenteComponent implements OnInit {
+  color: String;
+  texto: String;
 
-  constructor() { }
+  constructor() {
+    this.color = "";
+    this.texto = "";
+  }
 
   ngOnInit(): void {
   }

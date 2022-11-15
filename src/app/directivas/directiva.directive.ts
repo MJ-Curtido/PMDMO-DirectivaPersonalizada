@@ -1,9 +1,14 @@
-import { Directive, ElementRef, HostBinding, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener, Input } from '@angular/core';
 
 @Directive({
   selector: '[appDirectiva]'
 })
 export class DirectivaDirective {
+  @Input('appDirectiva') config = {
+    color: '',
+    texto: ''
+  }
+
   txt:String;
 
   constructor(private element: ElementRef) {
