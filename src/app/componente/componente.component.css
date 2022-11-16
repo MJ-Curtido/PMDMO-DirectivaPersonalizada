@@ -1,12 +1,26 @@
-.aMayus {
-    border: hotpink solid 1px;
+.general {
     border-radius: 7px;
-    color: hotpink;
     width: fit-content;
     padding: 7px 7px 7px 7px;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.17);
 }
 
-a {
-    color: black;
+.color1 {
+    color: hotpink;
+    border: hotpink solid 1px;
+}
+
+.color2 {
+    color: blueviolet;
+    border: blueviolet solid 1px;
+}
+
+.color3 {
+    color: tomato;
+    border: tomato solid 1px;
+}
+
+.color4 {
+    color: lightseagreen;
+    border: lightseagreen solid 1px;
 }

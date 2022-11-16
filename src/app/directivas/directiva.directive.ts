@@ -5,8 +5,8 @@ import { Directive, ElementRef, HostBinding, HostListener, Input } from '@angula
 })
 export class DirectivaDirective {
   @Input('appDirectiva') config = {
-    color: 'mi github :)',
-    texto: 'hotpink'
+    color: 'color1',
+    texto: 'Mi GitHub :)'
   }
 
   txt:String;
@@ -19,12 +19,16 @@ export class DirectivaDirective {
       this.pertenece = true;
       
       this.txt = this.element.nativeElement.innerHTML;
-      this.element.nativeElement.innerHTML = this.element.nativeElement.innerHTML.toUpperCase();
+      this.element.nativeElement.className = this.config.color;
+      this.element.nativeElement.innerHTML = this.config.texto.toUpperCase();
   }
   @HostListener('mouseout') onMouseOut() {
     this.pertenece = false;
+
     this.element.nativeElement.innerHTML = this.txt;
+
+    this.element.nativeElement.className = "";
   }
 
-  @HostBinding('class.aMayus') pertenece:Boolean = false;
+  @HostBinding('class.general') pertenece:Boolean = false;
 }
