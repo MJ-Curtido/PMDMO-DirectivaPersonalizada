@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ComponenteComponent implements OnInit {
   color: String;
   texto: String;
+  miObjeto = null;
 
   constructor() {
     this.color = "";
@@ -17,4 +18,7 @@ export class ComponenteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cambiarEstilo() {
+    
+  }
 }

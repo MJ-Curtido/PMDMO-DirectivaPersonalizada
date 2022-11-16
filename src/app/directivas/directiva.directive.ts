@@ -5,8 +5,8 @@ import { Directive, ElementRef, HostBinding, HostListener, Input } from '@angula
 })
 export class DirectivaDirective {
   @Input('appDirectiva') config = {
-    color: '',
-    texto: ''
+    color: 'mi github :)',
+    texto: 'hotpink'
   }
 
   txt:String;
