@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-componente',
@@ -10,6 +10,8 @@ export class ComponenteComponent implements OnInit {
   texto: String;
   miObjeto = null;
 
+  //@ViewChild('texto') inputTexto!: ElementRef;
+
   constructor() {
     this.color = "";
     this.texto = "";
@@ -19,6 +21,6 @@ export class ComponenteComponent implements OnInit {
   }
 
   cambiarEstilo() {
-    
+
   }
 }
